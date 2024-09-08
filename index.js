@@ -94,12 +94,33 @@ clear.addEventListener('click',()=>{
 
 // operator buttons
 
+// plus button
 const plus = document.querySelector('.plus-button');
 plus.addEventListener('click',()=>{
     operator = '+';
     num1 = +output;
     output = '';
-
+})
+// minus button
+const minus = document.querySelector('.minus-button');
+minus.addEventListener('click',()=>{
+    operator = '-';
+    num1 = +output;
+    output = '';
+})
+// multiply button
+const multiply = document.querySelector('.multiply-button');
+multiply.addEventListener('click',()=>{
+    operator = '*';
+    num1 = +output;
+    output = '';
+})
+// divide button
+const divide = document.querySelector('.divide-button');
+divide.addEventListener('click',()=>{
+    operator = '/';
+    num1 = +output;
+    output = '';
 })
 
 // equal button
@@ -111,9 +132,24 @@ equal.addEventListener('click',()=>{
         num2 = +output;
         display.textContent = add(num1,num2);
         output = '';
+    }else if(operator === '-'){
+        display.textContent = '';
+        num2 = +output;
+        display.textContent = subtraction(num1,num2);
 
-        
+        output = '';
+    }else if(operator === '*'){
+        display.textContent = '';
+        num2 = +output;
+        display.textContent = multiply(num1,num2);
 
+        output = '';
+    }else if(operator === '/'){
+        display.textContent = '';
+        num2 = +output;
+        display.textContent = divide(num1,num2);
+
+        output = '';
     }
 })
 

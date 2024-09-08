@@ -31,10 +31,10 @@ h1 {
   /* made the numbers come from right to left */
 
   direction: rtl;
+ overflow:scroll;
 
   font-size: 30px;
-  display: flex;
-  flex-wrap: wrap;
+
 }
 .buttons-container {
   /* border: 1px solid green; */

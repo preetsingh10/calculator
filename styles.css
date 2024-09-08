@@ -29,10 +29,9 @@ h1 {
   border-radius: 1px;
 
   text-align: right;
- overflow:scroll;
+  overflow: scroll;
 
   font-size: 30px;
-
 }
 .buttons-container {
   /* border: 1px solid green; */
@@ -47,6 +46,12 @@ button {
   font-size: 20px;
   flex-grow: 1;
   /* border-radius: 1px; */
+  border: 0;
+}
+button:hover {
+  background-color: rgb(171, 171, 171);
+
+  transition: 0.3s;
 }
 .zero-button {
   flex-grow: 20;

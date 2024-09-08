@@ -28,9 +28,7 @@ h1 {
   height: 50px;
   border-radius: 1px;
 
-  /* made the numbers come from right to left */
-
-  direction: rtl;
+  text-align: right;
  overflow:scroll;
 
   font-size: 30px;

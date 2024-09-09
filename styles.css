@@ -11,9 +11,9 @@ h1 {
 .calculator-body {
   width: 300px;
   height: fit-content;
-  border: 1px solid black;
-  background-color: black;
-  border-radius: 16px;
+
+  background-color: rgba(24, 23, 23, 0.545);
+  border-radius: 10px;
   align-self: center;
   padding: 10px;
 
@@ -47,9 +47,15 @@ button {
   flex-grow: 1;
   /* border-radius: 1px; */
   border: 0;
+  background-color: black;
+  color: white;
+}
+.operator-buttons{
+  background-color: orange;
+  color: black;
 }
 button:hover {
-  background-color: rgb(171, 171, 171);
+  background-color: rgba(158, 156, 156, 0.008);
 
   transition: 0.3s;
 }

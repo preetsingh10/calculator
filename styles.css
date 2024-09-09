@@ -4,6 +4,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  background-color: rgb(192, 192, 192);
 }
 h1 {
   align-self: center;
@@ -12,11 +13,11 @@ h1 {
   width: 300px;
   height: fit-content;
 
-  background-color: rgba(24, 23, 23, 0.545);
+  background-color: rgba(50, 48, 48, 0.74);
   border-radius: 10px;
   align-self: center;
   padding: 6px;
-
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
 }
@@ -46,53 +47,51 @@ button {
   font-size: 20px;
   flex-grow: 1;
 
-
   border: 0;
-  background: rgba(0, 0, 0, 0.758); /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
   backdrop-filter: blur(10px);
   cursor: pointer;
   color: white;
 }
-.operator-buttons{
+.operator-buttons {
   background-color: orange;
   color: black;
 }
 button:hover {
-opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.376);
 
   transition: 0.3s;
 }
 .zero-button {
   flex-grow: 20;
 }
-.plus-button{
-  background-image:url(svgs/plus.svg);
+.plus-button {
+  background-image: url(svgs/plus.svg);
   background-repeat: no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-position-x: center;
+  background-position-y: center;
 }
-.minus-button{
-  background-image:url(svgs/minus.svg);
+.minus-button {
+  background-image: url(svgs/minus.svg);
   background-repeat: no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-position-x: center;
+  background-position-y: center;
 }
-.multiply-button{
-  background-image:url(svgs/x.svg);
+.multiply-button {
+  background-image: url(svgs/x.svg);
   background-repeat: no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-position-x: center;
+  background-position-y: center;
 }
-.divide-button{
-  background-image:url(svgs/divide.svg);
+.divide-button {
+  background-image: url(svgs/divide.svg);
   background-repeat: no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-position-x: center;
+  background-position-y: center;
 }
-.percentage-button{
-  background-image:url(svgs/percent.svg);
+.percentage-button {
+  background-image: url(svgs/percent.svg);
   background-repeat: no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-position-x: center;
+  background-position-y: center;
 }
-

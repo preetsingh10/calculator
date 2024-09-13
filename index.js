@@ -28,65 +28,16 @@ display.textContent = output;
 
 // getting all the numeric button nodes
 
-const one = document.querySelector(".one-button");
-const two = document.querySelector(".two-button");
-const three = document.querySelector(".three-button");
-const four = document.querySelector(".four-button");
-const five = document.querySelector(".five-button");
-const six = document.querySelector(".six-button");
-const seven = document.querySelector(".seven-button");
-const eight = document.querySelector(".eight-button");
-const nine = document.querySelector(".nine-button");
-const zero = document.querySelector(".zero-button");
 const decimal = document.querySelector(".decimal-button");
 const minusValue = document.querySelector(".minus-value-button");
 
-// event listener for numeric buttons
-
-one.addEventListener("click", () => {
-  output += "1";
-  display.textContent = output;
-});
-
-two.addEventListener("click", () => {
-  output += "2";
-  display.textContent = output;
-});
-three.addEventListener("click", () => {
-  output += "3";
-  display.textContent = output;
-});
-
-four.addEventListener("click", () => {
-  output += "4";
-  display.textContent = output;
-});
-five.addEventListener("click", () => {
-  output += "5";
-  display.textContent = output;
-});
-
-six.addEventListener("click", () => {
-  output += "6";
-  display.textContent = output;
-});
-seven.addEventListener("click", () => {
-  output += "7";
-  display.textContent = output;
-});
-
-eight.addEventListener("click", () => {
-  output += "8";
-  display.textContent = output;
-});
-nine.addEventListener("click", () => {
-  output += "9";
-  display.textContent = output;
-});
-
-zero.addEventListener("click", () => {
-  output += "0";
-  display.textContent = output;
+// using queryselectoall
+const numericButtons = document.querySelectorAll(".numeric-button");
+numericButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    output += button.textContent;
+    display.textContent = output;
+  });
 });
 
 decimal.addEventListener("click", () => {

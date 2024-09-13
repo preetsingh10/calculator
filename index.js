@@ -24,7 +24,7 @@ function percentage(num1, num2) {
 
 // display
 const display = document.querySelector(".display");
-display.textContent = output;
+display.textContent = 0;
 
 // getting all the numeric button nodes
 
@@ -49,14 +49,13 @@ minusValue.addEventListener("click", () => {
   display.textContent = output;
 });
 
-// clear-button node
+// clear-button
 const clear = document.querySelector(".clear-button");
-// clear button event listener
 clear.addEventListener("click", () => {
   output = "";
   num1 = "";
   num2 = "";
-  display.textContent = output;
+  display.textContent = 0;
 });
 
 // operator buttons

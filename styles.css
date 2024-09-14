@@ -92,7 +92,7 @@ button:hover {
   background-position-y: center;
 }
 .percentage-button {
-  /* background-image: url(svgs/percent.svg); */
+  background-image: url(svgs/percent.svg);
   font-size: 0;
 
   background-repeat: no-repeat;

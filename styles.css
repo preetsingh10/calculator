@@ -53,9 +53,11 @@ button {
   cursor: pointer;
   color: white;
 }
-.operator-buttons {
+.orange-button {
   background-color: orange;
   color: black;
+  font-size: 0;
+
 }
 button:hover {
   background-color: rgba(255, 255, 255, 0.376);
@@ -90,7 +92,17 @@ button:hover {
   background-position-y: center;
 }
 .percentage-button {
-  background-image: url(svgs/percent.svg);
+  /* background-image: url(svgs/percent.svg); */
+  font-size: 0;
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.equal-button{
+  background-image: url(svgs/equal.svg);
+
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
